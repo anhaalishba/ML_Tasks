@@ -10,6 +10,8 @@ model = ChatGoogleGenerativeAI(
 )
 
 #  Inputs
+
+
 genre = input("Enter story genre ( horror, mystery, fantasy): ")
 character_name = input("Enter main character name: ")
 character_trait = input("Enter character trait (brave, shy, funny, evil, etc.): ")
@@ -29,3 +31,4 @@ Output format: {output_format}.
 result = model.invoke(story_prompt)
 print("GENERATED STORY!!!")
 print(result.content)
+
